@@ -2,10 +2,12 @@ body{
 	background: url("../img/brushed_alu_dark.png");
 }
 
-header,
-article,
-footer{
+.row{
 	background: url("../img/mirrored_squares.png");
+}
+
+.main-nav{
+	float: right;
 }
 
 /* Masthead */
