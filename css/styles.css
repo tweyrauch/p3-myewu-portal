@@ -1,3 +1,13 @@
+body{
+	background: url("../img/brushed_alu_dark.png");
+}
+
+header,
+article,
+footer{
+	background: url("../img/mirrored_squares.png");
+}
+
 /* Masthead */
 header{
 	position: relative;
@@ -14,6 +24,34 @@ header h1{
 .tabs-content {
 	border: 1px solid black;
 	border-top: none;
+	margin-top: -1px;
+}
+
+.tabs-content > .content.active{
+	padding:16px;
+}
+
+
+.tabs-content > .content.active,
+.tabs dd.active a,
+.tabs dd.active a:hover{
+	background: rgba(70,150,67,.5);
+}
+
+.tabs dd{
+	border: 1px solid black;
+}
+
+.tabs dd > a{
+	background: rgba(196,68,19,.5);
+}
+
+.tabs dd > a:hover{
+	background: rgba(196,68,19,.8);
+}
+
+dd.active{
+	border-bottom: none;
 }
 
 /*Column 2 Styling*/
