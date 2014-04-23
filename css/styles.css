@@ -26,6 +26,11 @@ section:first-of-type{
 	background: #469643;
 }
 
+#drop1,
+#drop2{
+	width: 180%;
+}
+
 /*Text styles*/
 h1{
 	color: #C3262E;
