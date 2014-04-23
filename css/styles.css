@@ -12,7 +12,9 @@ section:first-of-type{
 }
 
 .main-nav{
-	float: right;
+	position: fixed;
+	top: 2%;
+	right: 0;
 	list-style: none;
 }
 
