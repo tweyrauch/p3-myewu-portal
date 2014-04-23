@@ -1,5 +1,10 @@
 body{
 	background: url("../img/brushed_alu_dark.png");
+	font-family: Helvetica, sans-serif;
+}
+
+section:first-of-type{
+	padding-top: 30px;
 }
 
 .row{
@@ -10,6 +15,31 @@ body{
 	float: right;
 	list-style: none;
 }
+
+.button{
+	background: #C44413;
+}
+
+.button:hover{
+	background: #469643;
+}
+
+.calendar td{
+	height: 4.5em;
+	width: 4.5em;
+}
+
+/*Text styles*/
+h1{
+	color: #C3262E;
+	font-family: 'Federo', sans-serif;
+}	
+
+h2{
+	color: #573D34;
+	font-family: 'Share Tech', sans-serif;
+}
+
 
 /* Masthead */
 header{
@@ -32,12 +62,15 @@ header h1{
 
 .tabs-content > .content.active{
 	padding:16px;
+
 }
 
 
 .tabs-content > .content.active,
 .tabs dd.active a,
-.tabs dd.active a:hover{
+.tabs dd.active a:hover,
+.calendar tr:nth-child(odd) td:nth-child(odd),
+.calendar thead tr:nth-child(2) th:nth-child(odd){
 	background: rgba(70,150,67,.5);
 }
 
@@ -46,11 +79,11 @@ header h1{
 }
 
 .tabs dd > a{
-	background: rgba(196,68,19,.5);
+	background: rgba(93,66,55,.5);
 }
 
 .tabs dd > a:hover{
-	background: rgba(196,68,19,.8);
+	background: rgba(93,66,55,.8);
 }
 
 dd.active{
@@ -58,11 +91,14 @@ dd.active{
 }
 
 /*Column 2 Styling*/
-.panel.callout{
-	background: rgba(111, 175, 126, 0.47);
+.panel.callout,
+.calendar tr:nth-child(even) td:nth-child(even),
+.calendar thead tr:nth-child(2) th:nth-child(even){
+	background: rgba(196,68,19,.3);
+	border:none;
 }
 
 /*Modal*/
 .reveal-modal-bg{
-	background: orange;
+	background: #C44413;
 }

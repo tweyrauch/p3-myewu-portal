@@ -7,7 +7,10 @@
     <title>MyEWU Portal</title>
     
     <link rel="stylesheet" href="css/foundation.css" />
-    <link rel="stylesheet" href="css/styles.css" />    
+    <link rel="stylesheet" href="css/styles.css" /> 
+
+    <link href='http://fonts.googleapis.com/css?family=Federo' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Share+Tech' rel='stylesheet' type='text/css'>   
     
     <script src="js/vendor/modernizr.js"></script>
   
@@ -29,15 +32,15 @@
       <li><a href="#" data-options="align:left" data-dropdown="drop1" class="button">&#63;</a>
       <ul id="drop1" class="f-dropdown" data-dropdown-content>
         <li><a href="#"  id="joyride">Tour</a></li>
-        <li><a href="#">This is another</a></li>
-        <li><a href="#">Yet another</a></li>
+        <li><a href="#">Quick Reference Guide</a></li>
+        <li><a href="#">Contact</a></li>
       </ul></li>
 
       <li><a href="#" data-options="align:left" data-dropdown="drop2" class="button">&#9999;</a>
       <ul id="drop2" class="f-dropdown" data-dropdown-content>
-        <li><a href="#">Tour</a></li>
-        <li><a href="#">This is another</a></li>
-        <li><a href="#">Yet another</a></li>
+        <li><a href="#">Settings</a></li>
+        <li><a href="#">Other Settings</a></li>
+        <li><a href="#">More Settings</a></li>
       </ul></li>
 </ul>
      
@@ -46,20 +49,52 @@
       <!-- Column 1 -->
       <div class="large-6 columns">
         <h2 id="firstStop">Student Info.</h2>
-        
+
         <!-- Student Info Tabs -->
         <dl class="tabs" data-tab>
-          <dd class="active"><a href="#email">Email</a></dd>
-          <dd><a href="#schedule">Class Schedule</a></dd>
+          <dd class="active"><a href="#schedule">Class Schedule</a></dd>
           <dd><a href="#grades">Grades</a></dd>
+          <dd><a href="#standing">Class Standing</a></dd>
         </dl>
 
         <div class="tabs-content">
-          <div class="content active" id="email">
-            <p>Email</p>
-          </div>
-          <div class="content" id="schedule">
+          <div class="content active" id="schedule">
             <p>Class Schedule</p>
+            <table>
+              <thead>
+                <tr>
+                  <th width="200">Course Title</th>
+                  <th width="150">Course</th>
+                  <th width="150">Day</th>
+                  <th width="150">Time</th>
+                  <th width="150">Instructor</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer content</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>This is longer Content </td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+
+              </tbody>
+            </table>
           </div>
           <div class="content" id="grades">
             <div class="large-12 columns">
@@ -69,16 +104,49 @@
                   <option value="winter">Winter</option>
                   <option value="spring">Spring</option>
                 </select>
-              </label>
             </div>
-            <p>Grades</p>
+            <table>
+              <thead>
+                <tr>
+                  <th width="200">Course Title</th>
+                  <th width="150">Final Grade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+                <tr>
+                  <td>Content Goes Here</td>
+                  <td>Content Goes Here</td>
+                </tr>
+
+              </tbody>
+            </table>
+          </div>
+          <div class="content" id="standing">
+            <h6>Class Standing:</h6>
+            <h6 class="large-6 columns">Credits Earned:</h6>
+            <h6 class="large-6 columns">Remaining Credits:</h6>
+            <h6>Classes to take</h6>
           </div>
         </div>
       </div>
       
       <!-- Column 2 -->
       <div class="large-6 columns">
-        <h2>Class Info.</h2>
+          <div class="panel callout">
+          <h5>Announcements</h5>
+        </div>
+
+      </div>
+
+      <div class="large-6 columns">
         
         <div class="panel callout">
           <h5>Upcoming Assignments</h5>
@@ -99,32 +167,100 @@
         <div class="large-6 columns">
           <h2>Tuition</h2>
 
-          <!-- Accounts Tabs -->
-          <dl class="tabs" data-tab>
-            <dd class="active"><a href="#account">Account</a></dd>
-            <dd><a href="#tuition-dates">Tuition Due Dates</a></dd>
-            <dd><a href="#financial-aid">Financial Aid</a></dd>
-          </dl>
+        <!-- Account Tabs -->
+        <dl class="tabs" data-tab>
+          <dd class="active"><a href="#account">Account</a></dd>
+          <dd><a href="#tuition-due">Tuition Due Dates</a></dd>
+          <dd><a href="#aid">Financial Aid</a></dd>
+        </dl>
 
-          <div class="tabs-content">
-            <div class="content active" id="account">
-              <p>Account</p>
-            </div>
-            <div class="content" id="tuition-dates">
-              <p>Tuition Due Dates</p>
-            </div>
-            <div class="content" id="financial-aid">
-              <p>Financial Aid</p>
-            </div>
-          </div> 
+        <div class="tabs-content">
+          <div class="content active" id="account">
+            <p>Account</p>
+          </div>
+          <div class="content" id="tuition-due">
+            <p>Tuition Due Dates</p>
+          </div>
+          <div class="content" id="aid">
+            <p>Financial Aid</p>
+          </div>
         </div>
+      </div>
 
         <!-- Column 2 -->
-        <div class="large-6 columns">
-          <div class="panel callout">
-          <h5>Announcements</h5>
-        </div>
+        
 
+        <div class="large-6 columns">
+          <table class="calendar">
+            <thead>
+              <tr><th colspan="7"><h2>Month</h2></th></tr>
+              <tr>
+                <th>Sun</th>
+                <th>Mon</th>
+                <th>Tues</th>
+                <th>Wed</th>
+                <th>Thurs</th>
+                <th>Fri</th>
+                <th>Sat</th>
+              </tr>  
+          </thead>
+          <tbody>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+          </table>
         </div>
 
       </section>
@@ -137,15 +273,15 @@
     <footer class="row">
       
       <div class="columns large-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, sunt quaerat a enim est accusantium facilis nisi iusto non blanditiis aperiam vel eum. Non, sunt sequi nulla eaque praesentium consectetur?</p>   
+        <p></p>   
       </div>
 
       <div class="columns large-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, sunt quaerat a enim est accusantium facilis nisi iusto non blanditiis aperiam vel eum. Non, sunt sequi nulla eaque praesentium consectetur?</p>   
+        <p></p>   
       </div>
 
       <div class="columns large-4">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Neque, sunt quaerat a enim est accusantium facilis nisi iusto non blanditiis aperiam vel eum. Non, sunt sequi nulla eaque praesentium consectetur?</p>   
+        <p></p>   
       </div>
 
     </footer>
