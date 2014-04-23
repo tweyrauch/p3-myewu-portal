@@ -24,11 +24,6 @@ section:first-of-type{
 	background: #469643;
 }
 
-.calendar td{
-	height: 4.5em;
-	width: 4.5em;
-}
-
 /*Text styles*/
 h1{
 	color: #C3262E;
@@ -97,6 +92,20 @@ dd.active{
 	background: rgba(196,68,19,.3);
 	border:none;
 }
+
+.panel.callout a:not(.button){
+	color: #573D34;
+}
+
+.panel.callout a:not(.button):hover{
+	color: #469643;
+}
+
+.calendar td{
+	height: 4.5em;
+	width: 4.5em;
+}
+
 
 /*Modal*/
 .reveal-modal-bg{

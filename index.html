@@ -29,14 +29,14 @@
     <!-- Band of Content -->
     <article>
 <ul class="main-nav">
-      <li><a href="#" data-options="align:left" data-dropdown="drop1" class="button">&#63;</a>
+      <li id="firstStop"><a href="#" data-options="align:left" data-dropdown="drop1" class="button">&#63;</a>
       <ul id="drop1" class="f-dropdown" data-dropdown-content>
         <li><a href="#"  id="joyride">Tour</a></li>
         <li><a href="#">Quick Reference Guide</a></li>
         <li><a href="#">Contact</a></li>
       </ul></li>
 
-      <li><a href="#" data-options="align:left" data-dropdown="drop2" class="button">&#9999;</a>
+      <li id="numero1"><a href="#" data-options="align:left" data-dropdown="drop2" class="button">&#9999;</a>
       <ul id="drop2" class="f-dropdown" data-dropdown-content>
         <li><a href="#">Settings</a></li>
         <li><a href="#">Other Settings</a></li>
@@ -48,7 +48,7 @@
       <section class="row">
       <!-- Column 1 -->
       <div class="large-6 columns">
-        <h2 id="firstStop">Student Info.</h2>
+        <h2 id="numero2">Student Info.</h2>
 
         <!-- Student Info Tabs -->
         <dl class="tabs" data-tab>
@@ -140,7 +140,7 @@
       
       <!-- Column 2 -->
       <div class="large-6 columns">
-          <div class="panel callout">
+          <div id="numero3" class="panel callout">
           <h5>Announcements</h5>
         </div>
 
@@ -148,7 +148,7 @@
 
       <div class="large-6 columns">
         
-        <div class="panel callout">
+        <div id="numero4" class="panel callout">
           <h5>Upcoming Assignments</h5>
           <ul class="side-nav">
             <li><a href="#">Link 1</a></li>
@@ -165,7 +165,7 @@
 
         <!-- Column 1 -->
         <div class="large-6 columns">
-          <h2>Tuition</h2>
+          <h2 id="numero5">Tuition</h2>
 
         <!-- Account Tabs -->
         <dl class="tabs" data-tab>
@@ -190,7 +190,7 @@
         <!-- Column 2 -->
         
 
-        <div class="large-6 columns">
+        <div id="numero6" class="large-6 columns">
           <table class="calendar">
             <thead>
               <tr><th colspan="7"><h2>Month</h2></th></tr>
@@ -288,20 +288,37 @@
 
     <!-- <div id="joyride"> -->
         <ol class="joyride-list" data-joyride>
-          <li data-id="firstStop" data-text="Next" data-options="tip_location: top">
-            <p>Hello and welcome to the Joyride documentation page.</p>
+          <li data-id="firstStop" data-button="Next" data-options="tip_location:left;tip_animation:fade">
+            <h4>Help</h4>
+            <p>Find the tour here.</p>
           </li>
-          <li data-id="numero1" data-class="custom so-awesome" data-text="Next">
-            <h4>Stop #1</h4>
-            <p>You can control all the details for you tour stop. Any valid HTML will work inside of Joyride.</p>
+          <li data-id="numero1" data-class="custom so-awesome" data-text="Next" data-options="tip_location:left;tip_animation:fade">
+            <h4>Settings</h4>
+            <p>Where you can edit page settings.</p>
           </li>
-          <li data-id="numero2" data-button="Next" data-options="tip_location:top;tip_animation:fade">
-            <h4>Stop #2</h4>
-            <p>Get the details right by styling Joyride with a custom stylesheet!</p>
+          <li data-id="numero2" data-text="Next" data-options="tip_location: top">
+            <h4>Student Information</h4>
+          </li>
+          <li data-id="numero3" data-button="Next" data-options="tip_location:top;tip_animation:fade">
+            <h4>Announcements</h4>
+            <p>Any new announcements with appear here.</p>
+          </li>
+          <li data-id="numero4" data-button="Next" data-options="tip_location:top;tip_animation:fade">
+            <h4>Upcoming Assignments</h4>
+            <p>Links to Canvas Assignments with upcoming due dates will appear here.</p>
+          </li>
+          <li data-id="numero5" data-text="Next">
+            <h4>Tuition</h4>
+            <p>Where you can find everything you need to know about tuition due dates, account balance, and financial aid.</p>
+          </li>
+          
+          <li data-id="numero6" data-button="Next" data-options="tip_location:left;tip_animation:fade">
+            <h4>Calendar</h4>
+            <p>Calendar where you can add any important appointments.</p>
           </li>
           <li data-button="End">
-            <h4>Stop #3</h4>
-            <p>It works as a modal too!</p>
+            <h4>Important Alerts</h4>
+            <p>Important alerts will appear in a pop-up like this.</p>
           </li>
         </ol>
     <!-- </div>
