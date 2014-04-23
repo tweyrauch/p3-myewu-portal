@@ -8,6 +8,7 @@ body{
 
 .main-nav{
 	float: right;
+	list-style: none;
 }
 
 /* Masthead */
